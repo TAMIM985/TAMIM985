@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <a href="#" class="logo">.Free<span>Up</span></a>
+        <nav class="nav1">
+            <a href="#" >Home</a>
+            <a href="#">About</a>
+            <a href="#">Dashboard</a>
+            <a href="#" onclick="openPopUp()">Sign In</a>
+        </nav>
+        
+      </header>
+      <div class="head">
+      <h1 class="h1-2">Find Work!</h1>
+        <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit<br>Dolores atquebr  officiis aliquam suscipit at 
+            similique<br> asperiores nemo ipsum totam eaque  labore esse<br> magnam vero, tempore dignissimos qui consectetur 
+            porro ad!</p>
+            <button class="btn1">Get Start</button>
+        </div>
+<div class="scr">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/khheayfj.json"
+    trigger="in"
+    style="width:430px;height:430px">
+</lord-icon>
+
+
+</div>
+        <div class="blur-div" id="popUp">
+            <i class="fa fa-times-circle" aria-hidden="true" onclick="closePopUp()"></i>
+            <form action="">
+            <h1 class="sign">
+               Login
+            </h1> 
+            <input type="text" placeholder="Username" class="in1">
+            <input type="password" placeholder="Password" class="in1">
+    
+        </form>
+        <div class="div-2">
+        <input type="checkbox" >
+        <p>Remember me</p>
+        <a href="#">Forget Password?</a>
+        </div>
+        <button class="btn2" >Submit</button>
+        <p class="en-p">Don't have an account? <a href="#">Register</a></p>
+        </div>
+
+    </div>
+
+<script>
+let PopUp=document.getElementById('popUp');
+ function openPopUp(){
+    PopUp.classList.add('openPopUp');
+ }
+ function closePopUp(){
+    PopUp.classList.remove('openPopUp');
+ }
+ 
+</script>
+
+
+</body>
+</html>

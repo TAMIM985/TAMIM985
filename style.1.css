@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;
+}
+.banner-img{
+    
+    position: relative;
+   
+}
+.banner-text{
+    position: absolute;
+    
+}
+
+img{
+    width:100%;
+    height:100vh;
+    
+}
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding: 30px 7%;
+    top:10px;
+    animation-name: nav-move;
+ animation-duration: .9s;
+ animation-delay: 0;
+ animation-iteration-count: 1;
+}
+@keyframes nav-move{
+    0%{
+        padding:0 7%;
+
+    }
+    100%{
+        padding:30px 7%;
+    }
+}
+.logo{
+    color: aliceblue;
+    font-size:40px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.home{
+    color:blue;
+}
+nav a{
+ margin: 20px;
+ color: aliceblue;
+ text-decoration: none;
+ transition: 0.3s;
+ position:relative;
+
+}
+nav a::after{
+    content: '';
+    height: 3px;
+    width:0;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: aqua;
+     transition:.3s;
+}
+nav a:hover::after{
+    width:100%;
+}
+
+.text{
+    position: absolute;
+    top:30%;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   
+    width:100%;
+    height: 40%;
+}
+.text h1{
+    color:rgb(252, 210, 147);
+    font-size:60px;
+    margin: 9px;
+    animation-name: h1-move;
+ animation-duration: 1.7s;
+ animation-delay: 0;
+ animation-iteration-count: 1;
+    
+}
+@keyframes h1-move{
+    0%{
+       margin-left:0;
+       color:transparent;
+    }
+    100%{
+        text-align:center;
+        color:rgb(252, 210, 147);
+    }
+}
+.text p{
+    font-weight:700 ;
+    margin: 10px;
+    animation-name: p-move;
+    animation-duration: 1.7s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+       
+   }
+   @keyframes p-move{
+       0%{
+          margin-right:0;
+          color:transparent;
+       }
+       100%{
+           text-align:center;
+           color:black;
+       }
+   }
+.butt1{
+    margin-left:0;
+    width:250px;
+    padding:15px 0;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 102, 255);
+    color:black;
+    z-index: 2;
+    font-weight:bold;
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+     animation-name: buttn-move;
+    animation-duration: 1.7s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+       
+   }
+   @keyframes buttn-move{
+       0%{
+          margin-left:0;
+          
+       }
+       100%{
+           text-align:center;
+           
+       }
+   }
+span{
+    width:0;
+    background:rgb(0, 102, 255);
+    height:100%;
+    border-radius: 25px;
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index: -1;
+    transition: .5s;
+}
+.butt1:hover span{
+    width:100%;
+    
+}
+button:hover{
+    border:none;
+    color:white;
+}

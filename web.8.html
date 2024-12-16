@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.8</title>
+    <link rel="stylesheet" href="web.8.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#">.Quisom</a>
+        </div>
+        <nav class="nav1">
+           <button class="active"> <a href="#">Home</a></button>
+           <button class="nav-btn"> <a href="#">Contact</a></button>
+           <button class="nav-btn"> <a href="#">Profile</a></button>
+           <button class="nav-btn" > <a href="#">Sign In</a></button>
+        </nav>
+        <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+    <div class="light-nav" id="nav2" >
+            <i class="fa fa-times" aria-hidden="true" id="i2" onclick="closeNav()"></i>
+        <div class="inner-nav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Profile</a>
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+
+<script>
+      function openNav(){
+        document.getElementById('nav2').style.width='100%';
+        document.getElementById('inner-nav').style.display='block';
+      }
+
+      function closeNav(){
+        document.getElementById('nav2').style.width='0%';
+        document.getElementById('inner-nav').style.display='none';
+      }
+</script>
+
+    </header>
+
+
+<div class="head">
+   <h1 class="h1">Grow Your Skills,</h1>
+   <h1 class="h1">define your future</h1><br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magnam<br> perferendis quis 
+     nulla officiis, similique provident animi!</p>
+     <button class="explore">Explore Courses</button>
+     <button class="learn">Learn More</button>
+</div>
+<img src="c:\Users\TC\Downloads\1660073901-best-indoor-plants-zz-plant-1660073875.png" >
+
+
+</body>
+</html>

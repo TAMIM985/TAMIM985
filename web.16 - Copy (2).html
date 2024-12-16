@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.16.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>web.16</title>
+</head>
+<body>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: 
+    #121212;
+}
+.conta{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    z-index: -3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+    animation-duration: .8s;
+    animation-name:header;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+@keyframes header{
+    0%{
+        margin:0;
+    }
+    100%{
+        margin:30px;
+    }
+}
+@media (max-width: 1620px){
+    header{
+        margin-bottom: 10px;
+    }
+}
+.logo{
+    font-weight: 700;
+    font-size: 34px;
+    color: #ffffff;
+}
+nav a{
+        padding: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition: .3s;
+}
+nav a:hover{
+    color: #857d7d;
+}
+img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: absolute;
+    
+    top: 0; */
+    z-index: -1;
+    background-image: #636262;
+}
+@media (max-width: 1620px){
+    img{
+        position: absolute;
+        /* bottom: 0; */                                                                                                                                                                                                                                                                                                                                   
+        height: 833px;
+    }
+}
+@media (max-width: 1400px){
+    img{
+        display: none;
+    }
+}
+
+.h1{
+    color: #fff;
+    font-size:90px;
+    margin-top: -50px;
+    animation-duration: .8s;
+    animation-name:h1;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+@keyframes h1{
+    0%{
+        color:transparent;
+    }
+    100%{
+        color:#fff;
+    }
+}
+
+button{
+    color:white;
+    padding:15px 25px;
+    background-color: #636262;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    transition: .4s;
+    animation-duration: 1.3s;
+    animation-name:btn;
+    animation-iteration-count: 1;
+    animation-delay: 0;
+}
+@keyframes btn{
+    0%{
+        color:transparent;
+        background-color: transparent;
+    }
+    100%{
+        color:#fff;
+        background-color: #636262;
+    }
+}
+button:hover{
+    background-color: #3d3c3c;
+}
+.head{
+    position: absolute;
+    text-align:center;
+    
+}
+
+
+@media (max-width: 800px){
+    .h1{
+        font-size: 45px;
+    }
+}
+
+i{
+    color: #fff;
+    visibility: hidden;
+}
+@media (max-width: 950px){
+    .nav1{
+        visibility: hidden;
+    }
+    i{
+        
+        visibility: visible;
+    }
+}
+.uppernav{
+    width:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top:0;
+    text-align: center;
+    background-color: #1a1818a1;
+    overflow: hidden;
+    transition: .4s;
+}
+.nav2 li {
+    list-style: none;
+    padding: 40px 0;
+    font-weight: bold;
+    
+}
+.nav2 li a{
+    font-size: 35px;
+}
+#cross{
+    top: 20px;
+    right:20px;
+    position: absolute;
+}
+.home{
+    color: rgba(37, 49, 59, 0.623);
+}
+.home:hover{
+    color: rgba(0, 0, 0, 0.829);
+}
+    </style>
+  <div class="conta">
+
+    <img src="C:\Users\TC\Pictures\1352047.png" alt="">
+  <div class="head">
+    <h1 class="h1">A Suitable Fasion Is Obvious</h1>
+    <a href="shop.html"></a><button>Shop Now</button>
+  </div>
+  </div>
+    <header>
+        <h2 class="logo"><b>Expected</b></h2>
+        <nav class="nav1">
+            <a href="#"class="home">HOME</a>
+            <a href="#">CATALOG</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SHOP</a>
+        </nav>
+        <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+    </header>
+
+    <div class="uppernav" id="nav2">
+        <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closeNav()"></i>
+         <nav class="nav2">
+        <ul>
+            <li><a href="#" >HOME</a></li>
+            <li><a href="#">CATALOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
+         </nav>
+        </ul>
+    </div>
+
+
+<script>
+    function openNav(){
+        document.getElementById('nav2').style.width='100%';
+    }
+    function closeNav(){
+        document.getElementById('nav2').style.width='0';
+    }
+</script>
+
+
+
+
+</body>
+</html>

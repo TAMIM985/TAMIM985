@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color: #e78a8a7c;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px ;
+    animation-name: header;
+    animation-duration: .3s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    
+}
+@keyframes header{
+    0%{
+        margin: 0;
+    }
+    100%{
+        margin:20px;
+    }
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+nav a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+     padding: 10px;
+    transition: .2s;
+}
+nav a:hover{
+    color:#615d5d;
+}
+.nav-btn{
+    color: black;
+    background-color: #cc3d3d;
+    width: 140px;
+    padding:12px 0;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: .2s;
+}
+.nav-btn:hover{
+    background-color: #cc5d5d;
+}
+.main-head{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    margin-left: 140px;
+    /* margin-top: 300px; */
+    animation-name: main;
+    animation-duration: .8s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    
+}
+@keyframes main{
+    0%{
+        margin-left: 80px;
+        color: transparent;
+    }
+    100%{
+        margin-left:140px;
+    }
+}
+h1{
+    font-weight: bold;
+    font-size: 78px;
+    
+}
+p{
+    font-size: 15px;
+    margin-top: 10px;
+    color:gray;
+}
+.learn{
+    width: 150px;
+    margin-top: 50px;
+    padding: 15px 0;
+    color: rgb(0, 0, 0);
+    background-color: #ebeef1;
+    box-shadow:inset 10px 10px 13px -1px rgba(30, 139, 223, 0.158), inset -10px -10px 10px -1px rgba(255,255,255,0.70);
+    border-radius: 23px;
+    border: none;
+    font-size: 12px;
+    font-weight: bolder;
+    transition: .5s;
+}
+.learn:hover{
+    background-color: #ffffff;
+    /* box-shadow:inset 10px 10px 13px -1px rgba(30, 139, 223, 0.158), inset -10px -10px 10px -1px rgba(255,255,255,0.70); */
+}
+img{
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    width:800px;
+    visibility: visible;
+    animation-name: img;
+    animation-duration: .4s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    
+}
+@keyframes img{
+    0%{
+        right: 15px;
+        top: 80px;
+    }
+    100%{
+        right: 40px;
+        top: 100px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.16.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>web.16</title>
+</head>
+<body>
+    
+  <div class="conta">
+
+    <img src="C:\Users\TC\Pictures\1352047.png" alt="">
+  <div class="head">
+    <h1 class="h1">A Suitable Fasion Is Obvious</h1>
+    <a href="shop.html"></a><button>Shop Now</button>
+  </div>
+  </div>
+    <header>
+        <h2 class="logo"><b>Expected</b></h2>
+        <nav class="nav1">
+            <a href="#"class="home">HOME</a>
+            <a href="#">CATALOG</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SHOP</a>
+        </nav>
+        <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+    </header>
+
+    <div class="uppernav" id="nav2">
+        <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closeNav()"></i>
+         <nav class="nav2">
+        <ul>
+            <li><a href="#" >HOME</a></li>
+            <li><a href="#">CATALOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
+         </nav>
+        </ul>
+    </div>
+
+
+<script>
+    function openNav(){
+        document.getElementById('nav2').style.width='100%';
+    }
+    function closeNav(){
+        document.getElementById('nav2').style.width='0';
+    }
+</script>
+
+
+
+
+</body>
+</html>

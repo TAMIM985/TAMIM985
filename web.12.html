@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.12</title>
+    <link rel="stylesheet" href="web.12.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <header>
+            <a href="#" class="logo">Course<span>Hub</span></a>
+            <nav class="nav1">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Profile</a>
+            </nav>
+            <button class="contact">Contact</button>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+            </header>
+    <div class="upper-nav" id="nav1">
+        <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closeNav()"></i>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+<script>
+    function openNav(){
+        document.getElementById('nav1').style.width='100%';
+    }
+    function closeNav(){
+        document.getElementById('nav1').style.width='0';
+    }
+</script>
+        
+<div class="head">
+    <h1>Code For Free</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa voluptas quos? Lorem ipsum dolor <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eos.</p>
+    <div class="btn">
+    <a href="Courses.web.12.html"><button class="course">Explore Courses</button></a>
+    <a href=""><button class="contact2">Contact</button></a>
+</div>
+</div>
+</body>
+</html>

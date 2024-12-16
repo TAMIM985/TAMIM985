@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.12</title>
+    <link rel="stylesheet" href="web.12.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #000000ee;
+    /* width:100%;
+    height:100vh; */
+}
+header{
+    margin: 25px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    animation-name: header;
+    animation-duration: .5s;
+    animation-delay:0;
+    animation-iteration-count: 1;
+    
+ }
+ @keyframes header{
+     0%{
+        margin: 5px;
+     }
+     100%{
+        margin: 25px;
+     }
+ }
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 34px;
+    text-decoration: none;
+}
+span{
+    color: aquamarine;
+}
+/* nav{
+    position: absolute;
+} */
+.nav1 a{
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition:.2s;
+    
+}
+.nav1 a:hover{
+    color: #c5bdbd;
+}
+.contact{
+    padding: 12px 35px;
+    background-color: #4642429d;
+    color: #fff;
+    border:1px solid #c4bdbd;
+    outline: none;
+    border-radius: 40px;
+    transition: .3s;
+    position: absolute;
+    right: 100px;
+}
+
+.contact:hover{
+    /* box-shadow: 1px 1px 4px #cec7c7a4, -2px -2px 4px #cec7c79c; */
+    background-color: #706c6c9d;
+}
+.head{
+    width:100%;
+    height:90vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+h1{
+   margin-top: 10%;
+   color:#706c6c9d;
+   font-size: 120px;
+   animation-name: h1;
+   animation-duration: .9s;
+   animation-delay:0;
+   animation-iteration-count: 1;
+   
+}
+@keyframes h1{
+    0%{
+        color:#000000ee;
+        margin-top: 7%;
+    }
+    100%{
+        color:#706c6c9d;
+        margin-top: 10%;
+    }
+}
+p{
+    margin-top: 20px;
+    font-size: 17px;
+    color:#777e80;
+    font-weight: bold;
+}
+@media (max-width:1200px){
+    h1{
+        margin-top: 20%;
+        color:#706c6c9d;
+        font-size: 70px;
+        animation-name: h1;
+   animation-duration: .9s;
+   animation-delay:0;
+   animation-iteration-count: 1;
+     }
+     @keyframes h1{
+    0%{
+        color:#000000ee;
+        margin-top: 7%;
+    }
+    100%{
+        color:#706c6c9d;
+        margin-top: 20%;
+    }
+}
+     p{
+        margin-top: 25px;
+     }
+     .contact2{
+        visibility: visible;
+     }
+}
+
+ .course{
+    padding: 12px 35px;
+    background-color: #2725259d;
+    color: #fff;
+    border:1px solid #c4bdbd;
+    outline: none;
+    border-radius: 40px;
+    transition: .3s;
+    margin-right: 15px;
+}
+.course:hover{
+    /* box-shadow: 1px 1px 4px #cec7c7a4, -2px -2px 4px #cec7c79c; */
+    background-color: #4e4b4b9d;
+}
+.contact2{
+    padding: 12px 35px;
+    background-color: #2725259d;
+    color: #fff;
+    border:1px solid #c4bdbd;
+    outline: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+.contact2:hover{
+    /* box-shadow: 1px 1px 4px #cec7c7a4, -2px -2px 4px #cec7c79c; */
+    background-color: #4e4b4b9d;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 29px;
+}
+i{
+    color: #fff;
+    
+    visibility: hidden;
+    
+}
+@media (max-width:910px){
+    .nav1{
+        visibility: hidden;
+    }
+    .contact{
+        visibility: hidden;
+    }
+    i{
+        visibility: visible;
+    }
+}
+.upper-nav{
+    width: 0;
+    height: 100vh;
+    display: flex;
+    left: 0;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #5a565698;
+    overflow: hidden;
+    text-align: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+.nav2 li{
+    list-style: none;
+    padding: 40px 0;
+    font-size: 38px;
+    font-weight: bold;
+}
+.nav2 li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s;
+
+}
+.nav2 li a:hover{
+    
+    color: #c7bbbb;
+
+}
+#cross{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    font-size: 30px;
+    transition: .3s;
+}
+#cross:hover{
+    color:#c7bbbb;
+}
+</style>
+<body>
+    
+        <header>
+            <a href="#" class="logo">Course<span>Hub</span></a>
+            <nav class="nav1">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Profile</a>
+            </nav>
+            <button class="contact">Contact</button>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+            </header>
+    <div class="upper-nav" id="nav1">
+        <i class="fa fa-times" aria-hidden="true" id="cross" onclick="closeNav()"></i>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+<script>
+    function openNav(){
+        document.getElementById('nav1').style.width='100%';
+    }
+    function closeNav(){
+        document.getElementById('nav1').style.width='0';
+    }
+</script>
+        
+<div class="head">
+    <h1>Code For Free</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsa voluptas quos? Lorem ipsum dolor <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eos.</p>
+    <div class="btn">
+    <a href="Courses.web.12.html"><button class="course">Explore Courses</button></a>
+    <a href=""><button class="contact2">Contact</button></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login box making using HTML,CSS and JS</title>
+    <link rel="stylesheet" href="Web.4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\F C\Downloads\916798bedc1ce352ce8a22ef15273d15.jpg" >
+<button class="btn1" onclick="openPopup()"> Login</button>
+    </div>
+    <div class="blur-div" id="popup">
+        <i class="fa fa-times-circle" aria-hidden="true"  ></i>
+        <form action="">
+        <h1 class="sign">
+           Login
+        </h1> 
+        <input type="text" placeholder="Username" class="in1">
+        <input type="password" placeholder="Password" class="in1">
+
+    </form>
+    <div class="div-2">
+    <input type="checkbox" >
+    <p>Remember me</p>
+    <a href="#">Forget Password?</a>
+    </div>
+    <button class="btn2" >Submit</button>
+    <p class="en-p">Don't have an account? <a href="#">Register</a></p>
+    </div>
+      
+    <script>
+        let popup=document.getElementById('popup');
+
+        function openPopup(){
+            popup.classList.add('open-popup')
+        }
+        function closePopup(){
+            popup.classList.remove('open-popup')
+        }
+    </script>
+    
+</body>
+</html>
